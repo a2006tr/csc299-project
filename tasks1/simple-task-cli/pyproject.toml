@@ -1,0 +1,13 @@
+[tool.poetry]
+name = "simple-task-cli"
+version = "0.1.0"
+description = "A simple command-line interface task manager."
+authors = ["Your Name <youremail@example.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

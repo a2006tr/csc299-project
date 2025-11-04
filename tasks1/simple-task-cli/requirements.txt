@@ -1,0 +1,7 @@
+# No third-party runtime dependencies required — the CLI uses the Python standard library.
+# If you install the package for development, use:
+#   pip install -e .
+#
+# If you later add external packages, list them here one-per-line, for example:
+# flask==2.3.2
+# click==
