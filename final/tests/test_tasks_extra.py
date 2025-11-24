@@ -1,10 +1,10 @@
 import json
-from tasks3 import load_tasks, save_tasks, matches, main
+from final import load_tasks, save_tasks, matches, main
 
 
 def test_add_with_due_and_done(tmp_path, monkeypatch):
     fake_file = tmp_path / "tasks.json"
-    monkeypatch.setattr("tasks3.find_tasks_file", lambda: fake_file)
+    monkeypatch.setattr("final.find_tasks_file", lambda: fake_file)
 
     # Add a task non-interactively using --due
     rc = main(["add", "HW1", "Chapter 1", "--due", "2025-11-30"])

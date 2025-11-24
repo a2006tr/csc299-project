@@ -1,5 +1,5 @@
 import json
-from tasks3 import load_tasks, save_tasks, matches
+from final import load_tasks, save_tasks, matches
 
 
 def test_save_and_load_round_trip(tmp_path, monkeypatch):
@@ -9,7 +9,7 @@ def test_save_and_load_round_trip(tmp_path, monkeypatch):
     fake_file = tmp_path / "tasks.json"
 
     # Force find_tasks_file() to return our temporary file
-    monkeypatch.setattr("tasks3.find_tasks_file", lambda: fake_file)
+    monkeypatch.setattr("final.find_tasks_file", lambda: fake_file)
 
     tasks = [{"id": 1, "title": "test", "description": "abc"}]
     
