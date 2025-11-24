@@ -1,0 +1,17 @@
+[project]
+name = "final"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Arturo", email = "atorr129@depaul.edu" }
+]
+requires-python = ">=3.13"
+dependencies = []
+
+[project.scripts]
+final = "final:main"
+
+[build-system]
+requires = ["uv_build>=0.9.10,<0.10.0"]
+build-backend = "uv_build"
