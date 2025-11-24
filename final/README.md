@@ -7,7 +7,7 @@ Quick start
 1. Make sure you're in the project root (where this README and `pyproject.toml` live):
 
    ```bash
-   cd /path/to/project/final1
+   cd /path/to/project/final
    ```
 
 2. Add an assignment (interactive due date):
@@ -54,8 +54,6 @@ The project includes pytest tests. Run them from the project root like this:
 ```bash
 python3 -m pytest -q
 ```
-
-If you want improvements (flexible date parsing, due-soon filters, nicer output), I can add them.
 
 AI features
 -----------
@@ -109,7 +107,7 @@ Project example
 This repository contains a sample assignments folder at the project root:
 
 - Relative path: `assignments/`
-- Absolute path: `/Users/arturo/Desktop/project3/final1/assignments`
+- Absolute path: `/Users/arturo/Desktop/csc299/final/assignments`
 
 The command below will process files placed in that folder and write outputs
 to `assignments/done/` (created if missing):
@@ -123,5 +121,3 @@ Behavior and safety notes
    using non-AI features.
 - The model and prompt are conservative (low temperature and token limits) but
    you should review any generated outputs before using them.
-- If you want a dry-run mode, retry/backoff, or mocked tests for AI, I can add
-   them.
